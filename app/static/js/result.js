@@ -16,3 +16,10 @@ if (saved === null) {
     document.getElementById("history-link").href = "/history?name=" + encodeURIComponent(result.player_name);
     document.getElementById("result-box").hidden = false;
 }
+const printButton = document.getElementById("print-result-btn");
+
+if (printButton) {
+    printButton.addEventListener("click", () => {
+        window.print();
+    });
+}
