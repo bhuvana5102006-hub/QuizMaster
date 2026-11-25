@@ -201,4 +201,34 @@ td {
     color: #4a5568;
     margin: 16px 0 24px;
 }
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    header,
+    nav,
+    .skip-link,
+    .no-print,
+    .buttons {
+        display: none !important;
+    }
+
+    main {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        border: none;
+        box-shadow: none;
+    }
+
+    @page {
+        size: A4;
+        margin: 15mm;
+    }
+}
 
